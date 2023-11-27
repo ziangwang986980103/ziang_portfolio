@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html>
+<link rel="shortcut icon" href=images/favicon.png>
+
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel=stylesheet href="./fonts/css?family=Roboto:300,400,400italic,500,500italic,700,900|Roboto+Mono:400,700">
+    <link rel=stylesheet href="./fonts/icon?family=Material+Icons">
+    <link rel=stylesheet href=https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue_grey-deep_orange.min.css>
+    <link rel=stylesheet href=random.css>
+    <script src=https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js></script>
+    <script src=lib/jquery/dist/jquery.min.js></script>
+    <script src=lib/hammerjs/hammer.min.js></script>
+    <script src=lib/fastclick/lib/fastclick.js></script>
+    <script src=scripts/index.js></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ziang Wang</h1>
+        <a class="nav-link text-gray-600 hover:text-gray-900" href="./bio.html">Bio</a>
+        <a class="nav-link text-gray-600 hover:text-gray-900" href="./random.html">Portfolio</a>
+        <a class="nav-link" href="./music.html">Music</a>
+    </header>
+    <main>
+        <section id="GitGPT" class="project taller">
+            <div class=info>
+                <h2>GitGPT</h2>
+                <p class=date>/ AI Agent / Edeucation / Open-Source Analysis tool /</p>
+                <p>
+                    GitGPT is an AI-powered tool designed to assist developers in efficiently comprehending and navigating unfamiliar
+                    Github
+                    repositories. By following a simple two-step process, this tool enables users to effectively explore and understand
+                    new
+                    codebases.
+                </p>
+                <p>First, users can type any link of GitHub repository of their choice. GitGPT will automatically access,examine, and
+                analyze the repository.</p>
+                <p>Second, when the analysis is complete, users can proceed to the second step, which involves utilizing the AI
+                capabilities of
+                GitGPT to help them find their way around the codebase.</p>
+                <p>GitGPT is still in experiment. Some features are to be implemented and included in the GitGPT:</p>
+                <ul>
+                    <li>
+                        <p>
+                            Automatic generation of repository pathway through analyzing the commit and issue history
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Dependencies analysis of repository
+                        </p>
+                    </li>
+                </ul>
+                <div class=actions>
+                    <a href="https://github.com/ziangwang986980103/GitGPT">Github</a>
+                </div>
+            </div>
+            <div class=pages>
+                <div class=page-scroll>
+                    <!-- <div class="page video" style="background-color: #7DA0A5">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <video muted=true preload=none width=1000vmin;>
+                                    <source src=media//miniPEV/miniPEV.mp4 type=video/mp4>
+                                </video>
+                                <img class=thumb src="images/gitgpt_1.PNG">
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div> -->
+                    <div class="page tall image" style="background-color: #7DA0A5">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(images/gitgpt_1.PNG);">
+                                </div>
+                                <img src=images/gitgpt_1.PNG>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class=caption>
+                            <p>GitGPT's main page. The user can input the repository link here.</p>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #7DA0A5">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(images/gitgpt_2.PNG);">
+                                </div>
+                                <img src="images/gitgpt_2.PNG">
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class=caption>
+                            <p>After process of the repo, the users can talk to GitGPT and ask questions on this page.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="Mixed Reality visualization of Radioactive sources" class="project taller">
+            <div class=info>
+                <h2>Mixed Reality visualization of Radioactive Sources</h2>
+                <p class=date>/ Mixed Reality / Particles Detection /</p>
+                <p>
+                    Radiation source localization and characterization are challenging tasks that currently require complex analyses for
+                    interpretation. Traditionally, the location of radiation source are displayed in 2D angular space projections on screens. This is unintuitive for 
+                    users.
+                </p>
+                <p>
+                    To solved this problem, in the summer of 2022, I worked in the University of Michigan Detection for Nuclear Nonproliferation Group(DNNG). Our group proposed propose to 
+                    display the data directly to the user via the head-mounted MR smart glasses, presenting the directional
+                    information as an overlay to the user's 3D visual experience. We describe an open source implementation using efficient
+                    data transfer, image calculation, and 3D engine.
+                </p>
+                <div class=actions>
+                    <a href="https://www.nature.com/articles/s41598-023-27632-1">Paper</a>
+                </div>
+            </div>
+            <div class=pages>
+                <div class=page-scroll>
+                    <div class="page video" style="background-color: #7DA0A5">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <video muted=true preload=none width=900vmin;>
+                                    <source src="videos/Mixed_reality.mp4" type=video/mp4>
+                                </video>
+                                <img class=thumb src="images/mixed_reality_thumb.PNG">
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class=caption>
+                            <p>The demo video.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="page tall image" style="background-color: #7DA0A5">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(images/gitgpt_1.PNG);">
+                                </div>
+                                <img src=images/gitgpt_1.PNG>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div> -->
+                    <!-- <div class="page tall image" style="background-color: #7DA0A5">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(images/gitgpt_1.PNG);">
+                                </div>
+                                <img src=images/gitgpt_1.PNG>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #7DA0A5">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(images/gitgpt_2.PNG);">
+                                </div>
+                                <img src="images/gitgpt_2.PNG">
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class=caption>
+                            <p>Example GitGPT page</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="EDBook" class="project taller">
+            <div class=info>
+                <h2>AI-Enhanced Interactive Narratives for Programming Education</h2>
+                <p class=date>/ LLM / Programming Educatoin / VSCode Plugin /</p>
+                <p>
+                    LLM is a good tutor for beginners. However, there are still some problems when learning new knowledge with it:
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            The learners may not be clear what questions to ask when they are learning a new field.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The learners may not have a concrete learning goal.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The learners can't assess their understanding through practice.
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    To solve these problems, I worked in a group supervised Prof. Steve Oney at University of Michigan to develop the EDBook, an electronic dialogic book embedded with context-aware LLM. 
+                </p>
+                <p>.</p>
+                <div class=actions>
+                    <a href="https://edbook.net/">Website</a>
+                </div>
+            </div>
+            <div class=pages>
+                <div class=page-scroll>
+                    <div class="page video" style="background-color: #7DA0A5">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <video muted=true preload=none width=1500vmin;>
+                                    <source src="videos/EDBook.mp4" type=video/mp4>
+                                </video>
+                                <img class=thumb src="images/EDBook_thumb.PNG">
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class=caption>
+                            <p>The introductory video.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="page tall image" style="background-color: #7DA0A5">
+                                <div class="media loader-parent" style=color:#3c6caf>
+                                    <div>
+                                        <div class="media image" style="background-image: url(images/gitgpt_1.PNG);">
+                                        </div>
+                                        <img src=images/gitgpt_1.PNG>
+                                    </div>
+                                    <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                        <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                        </circle>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="page tall image" style="background-color: #7DA0A5">
+                                <div class="media loader-parent" style=color:#3c6caf>
+                                    <div>
+                                        <div class="media image" style="background-image: url(images/gitgpt_2.PNG);">
+                                        </div>
+                                        <img src="images/gitgpt_2.PNG">
+                                    </div>
+                                    <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                        <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                        </circle>
+                                    </svg>
+                                </div>
+                                <div class=caption>
+                                    <p>Example GitGPT page</p>
+                                </div>
+                            </div> -->
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="io" class="project taller">
+            <div class=info>
+                <h2>io: An 2D adventure Game - University of Michigan Wolverinesoft</h2>
+                <p class=date>/ Game / Unity / Club /</p>
+                <p>
+                    io is an 2D adventure game that offers challenging gameplay with intricate platforming and intense battles, enhanced by the character's ability to
+                    teleport, adding to the player's agility. The game culminates in a demanding boss fight, leaving players in awe of the
+                    Crystal Caves' mysterious depths, the Oran Windmill Fort's splendor, and the forlorn atmosphere of the Abandoned City.
+                </p>
+                <p>
+                    It's a group project by the University of Michigan's Wolverinsoft club. I was responsible for the development of the mechanics of the main character and the enemies.
+                    We launched this game at University of Michigan's ”Game Show” and garnered 1.2k+ positive reviews within the first week.
+                </p>
+                <div class=actions>
+                    <a href="https://wolverinesoft-studio.itch.io/io">Website</a>
+                </div>
+            </div>
+            <div class=pages>
+                <div class=page-scroll>
+                    <div class="page tall image" style="background-color: #7DA0A5">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(images/io_1.gif);">
+                                </div>
+                                <img src=images/io_1.gif>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class=caption>
+                            <p>Demo of io in the Crystal Cave.</p>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #7DA0A5">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(images/io_2.gif);">
+                                </div>
+                                <img src="images/io_2.gif" style="width: 450px; height:300px;">
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class=caption>
+                            <p>Demo of io in the Oran Windmill Fort.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <footer>
+            <a href=https://imartinezl.github.io/dist/index.html>
+                <img src=media/Menu.png style=width:35px;height:35px; name=Menu class=left>
+            </a>
+        </footer>
+        <section id="Electric Formula Student Frame" class="project tall">
+            <div class=info>
+                <h2>Electric Formula Student Frame</h2>
+                <p class=date>/ MECHANICAL DESIGN / FABRICATION / TEAMWORK /</p>
+                <p>
+                    <a href="https://www.facebook.com/TecnunSEEDRacing/">Tecnun Seed Racing</a>
+                    is a team-project where an electric car is designed and built to take part at the <a
+                        href="http://www.formulastudent.es/">Formula Student</a>
+                    competition. We start from scratch and we end up with a car that is able to compete on F1 circuits
+                    such as Montmeló - Barcelona.
+                </p>
+                <p>
+                    I really enjoy mechatronics, and two years ago I joined Tecnun Seed Racing, where I was responsible
+                    for the mechanical design and manufacturing of the frame, and <strong>managing the chassis
+                        team</strong>
+                    .
+                </p>
+                <p>
+                    Frame <strong>design objectives</strong>
+                    :
+                </p>
+                <ul>
+                    <li>Meet safety requirements</li>
+                    <li>Keep an ergonomic driving environment</li>
+                    <li>Guarantee enough stiffness for an appropriate lateral load distribution and suspension
+                        sensitivity</li>
+                    <li>Clever packaging: ensure an easy accessibility of the electric drivetrain components.</li>
+                </ul>
+                <div class=actions>
+                    <a href="https://www.facebook.com/TecnunSEEDRacing/">More Info</a>
+                    <a href="http://seedracing.tecnun.es/">Project Webpage (under construction)</a>
+                </div>
+            </div>
+            <div class=pages>
+                <div class=page-scroll>
+                    <div class="page video" style="background-color: #2E9797">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <video muted=true preload=none width=1500vmin;>
+                                    <source src=media//Tecnun_Seed_Racing/v1.mp4 type=video/mp4>
+                                </video>
+                                <img class=thumb src=media//Tecnun_Seed_Racing/v1-thumb.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class=caption>
+                            <p>Tubular steel space frame. Weight 35kg. Torsional stiffness target of 2200Nm/deg;
+                                validated 1900Nm/deg stiffness by CAE FEA</p>
+                        </div>
+                    </div>
+                    <div class="page video" style="background-color: #2E9797">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <video muted=true preload=none width=1600vmin;>
+                                    <source src=media//Tecnun_Seed_Racing/v2.mp4 type=video/mp4>
+                                </video>
+                                <img class=thumb src=media//Tecnun_Seed_Racing/v2-thumb.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #2E9797">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image"
+                                    style="background-image: url(media//Tecnun_Seed_Racing/5.jpg);"></div>
+                                <img src=media//Tecnun_Seed_Racing/5.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #2E9797">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image"
+                                    style="background-image: url(media//Tecnun_Seed_Racing/3.jpg);"></div>
+                                <img src=media//Tecnun_Seed_Racing/3.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class=caption>
+                            <p>The frame was manufactured using cold-drawn seamless tubing, which provides the required
+                                mechanical properties and shows good welding behavior.</p>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #2E9797">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image"
+                                    style="background-image: url(media//Tecnun_Seed_Racing/18.png);"></div>
+                                <img src=media//Tecnun_Seed_Racing/18.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class=caption>
+                            <p>Tubes position was optimized using ANSYS. This optimization was carried out by changing
+                                the geometry and section of tubes not stipulated by the rules.</p>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #2E9797">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image"
+                                    style="background-image: url(media//Tecnun_Seed_Racing/15.jpg);"></div>
+                                <img src=media//Tecnun_Seed_Racing/15.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class=caption>
+                            <p>The ergonomic design of the cockpit was studied using an adjustable custom made mock-up.
+                                It enhances the free movement of driver`s head, arms and legs, having a fully adjustable
+                                pedal box to accommodate different size drivers.</p>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #2E9797">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image"
+                                    style="background-image: url(media//Tecnun_Seed_Racing/6.jpg);"></div>
+                                <img src=media//Tecnun_Seed_Racing/6.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #2E9797">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image"
+                                    style="background-image: url(media//Tecnun_Seed_Racing/7.jpg);"></div>
+                                <img src=media//Tecnun_Seed_Racing/7.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #2E9797">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image"
+                                    style="background-image: url(media//Tecnun_Seed_Racing/8.jpg);"></div>
+                                <img src=media//Tecnun_Seed_Racing/8.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href=https://imartinezl.github.io/dist/index.html>
+                <img src=media/Menu.png style=width:35px;height:35px; name=Menu class=left>
+            </a>
+        </footer>
+        <section id="Crowdsearch - HackMIT" class="project tall">
+            <div class=info>
+                <h2>Crowdsearch - HackMIT</h2>
+                <p class=date>/ WEB DEVELOPMENT / SOCIAL MEDIA / HACKATHON</p>
+                <p>
+                    Collaborated with 3 other team members from different universities to create a web platform that
+                    <strong>helps people collaborate to find missing persons</strong>
+                    using React JS and Firebase. <strong>Won “Best Use Of Firebase” award by Firebase/Google
+                        team</strong>
+                    .
+                </p>
+                <p>
+                    Last October, a 16 year old girl went <strong>missing</strong>
+                    outside Oslo, in Norway. Her parents posted about it on Facebook, and it was quickly shared by
+                    thousands of people.
+                </p>
+                <p>
+                    An immense amount of comments scattered around a large amount of Facebook posts consisted of people
+                    trying to help, by offering to hang up posters, aid in the search and similar. The girl was found,
+                    and maybe a <strong>few of the contributions helped</strong>
+                    ?
+                </p>
+                <p>
+                    Even though Facebook is a really impressive tool for quickly sharing information like this across a
+                    huge network, it falls short on the other end - of <strong>letting people contribute to the
+                        search</strong>
+                    . Facebook groups are too linear, and has few tools that aid in making this as streamlined as
+                    possible. The idea is to create a platform that covers this.
+                </p>
+                <div class=actions>
+                    <a href=https://hackmit-crowdsearch.firebaseapp.com/0>Crowdsearch</a>
+                    <a href=https://devpost.com/software/crowd-search-zjq3ro>Devpost</a>
+                    <a href=https://github.com/ekmartin/hackmit-crowdsearch>Github Repo</a>
+                </div>
+            </div>
+            <div class=pages>
+                <div class=page-scroll>
+                    <div class="page tall image" style="background-color: #247291">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//HackMIT/Captura1.jpg);">
+                                </div>
+                                <img src=media//HackMIT/Captura1.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #247291">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//HackMIT/Captura2.jpg);">
+                                </div>
+                                <img src=media//HackMIT/Captura2.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href=https://imartinezl.github.io/dist/index.html>
+                <img src=media/Menu.png style=width:35px;height:35px; name=Menu class=left>
+            </a>
+        </footer>
+        <section id="Fishing Reel Design" class="project taller">
+            <div class=info>
+                <h2>Fishing Reel Design</h2>
+                <p class=date>/ MECHANICAL DESIGN / RENDERING / KINEMATICS</p>
+                <p>
+                    By designing a fishing reel, we studied its <strong>kinematic mechanisms</strong>
+                    in order to design a 3D model using CAD with the help of PTC Creo Parametric software.
+                </p>
+                <p>
+                    There was an iterative process to design each part, using and <strong>skeleton</strong>
+                    as layout. Finally, the fishing reel was assembled. Designing with <strong>precision</strong>
+                    the different pieces and mechanisms was the key point of the process.
+                </p>
+                <p>
+                    The end product is a fishing reel enabling the user to introduce the species desired to catch, which
+                    then activates a mechanism allowing the <strong>modification of the reel</strong>
+                    in order to have enough fishing line.
+                </p>
+                <ul>
+                    <li>Mechanism design</li>
+                    <li>Visual appeal</li>
+                    <li>Ergonomic</li>
+                    <li>Ease of use</li>
+                </ul>
+                <p>
+                    Thanks to the great teamwork the project was given the <em>best possible mark</em>
+                    .
+                </p>
+                <div class=actions>
+                    <a href=https://vimeo.com/158017085>Render Video</a>
+                </div>
+            </div>
+            <div class=pages>
+                <div class=page-scroll>
+                    <div class="page video" style="background-color: #49ACB7">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <video muted=true preload=none width=600vmin;>
+                                    <source src="media//Carrete/Fishing Reel - Carrete de Pesca.mp4" type=video/mp4>
+                                </video>
+                                <img class=thumb src="media//Carrete/Fishing Reel - Carrete de Pesca-thumb.png">
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #49ACB7">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Carrete/Imagen7.png);">
+                                </div>
+                                <img src=media//Carrete/Imagen7.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #49ACB7">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Carrete/Imagen8.png);">
+                                </div>
+                                <img src=media//Carrete/Imagen8.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #49ACB7">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Carrete/Imagen9.png);">
+                                </div>
+                                <img src=media//Carrete/Imagen9.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #49ACB7">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Carrete/Imagen6.png);">
+                                </div>
+                                <img src=media//Carrete/Imagen6.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #49ACB7">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Carrete/Imagen5.png);">
+                                </div>
+                                <img src=media//Carrete/Imagen5.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href=https://imartinezl.github.io/dist/index.html>
+                <img src=media/Menu.png style=width:35px;height:35px; name=Menu class=left>
+            </a>
+        </footer>
+        <section id="Grinding Machine Design - Danobat Group Award" class="project taller">
+            <div class=info>
+                <h2>Grinding Machine Design - Danobat Group Award</h2>
+                <p class=date>/ DESIGN / MECHANICS / MACHINE-TOOL</p>
+                <p>
+                    <strong>Best conceptual design and precision engineering project awarded</strong>
+                    by <a href=http://www.danobatgroup.com/en>DanobatGroup</a>
+                    . Work developed with other three students of the TECNUN Industrial Engineering Masters course.
+                </p>
+                <p>
+                    The project involved taking on a practical challenge by the 33 students, who had the opportunity to
+                    develop their knowledge and put it into practice. The project was of technological value for the
+                    <strong>Machine-Tool sector</strong>
+                    within the area of Design and Precision Engineering of a grinder.
+                </p>
+                <ul>
+                    <li>Main Goal: Conception, design and presentation of a grinding machine for train axles.</li>
+                    <li>
+                        The machine had to be designed so that axles with different geometries could be manufactured in
+                        a <strong>roboticed and automatic environment</strong>
+                        .
+                    </li>
+                    <li>
+                        Axles dimensions and tolerances were provided by the company <strong>Danobat Group</strong>
+                        , which is one of the most important European largest machine tool builder.
+                    </li>
+                </ul>
+                <p>
+                    The design development was implemented following the <em>11 Principles of Precision Machine
+                        Design</em>
+                    .
+                </p>
+                <div class=actions>
+                    <a href=http://www.danobatgroup.com/en>DANOBAT</a>
+                    <a
+                        href="http://press.danobatgroup.com/danobatgroup-collaborates-in-the-training-for-the-tecnun-industrial-engineering-masters/">Award
+                        Press Release</a>
+                    <a href=https://vimeo.com/158016912>Grinding Machine Video</a>
+                </div>
+            </div>
+            <div class=pages>
+                <div class=page-scroll>
+                    <div class="page video" style="background-color: #80B9D2">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <video muted=true preload=none width=700vmin;>
+                                    <source src=media//Danobat/Grinding_Machine_Danobat_HD.mp4 type=video/mp4>
+                                </video>
+                                <img class=thumb src=media//Danobat/Grinding_Machine_Danobat_HD-thumb.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #80B9D2">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Danobat/Imagen2.jpg);">
+                                </div>
+                                <img src=media//Danobat/Imagen2.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #80B9D2">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Danobat/award.jpg);"></div>
+                                <img src=media//Danobat/award.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #80B9D2">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Danobat/Imagen1.png);">
+                                </div>
+                                <img src=media//Danobat/Imagen1.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #80B9D2">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Danobat/Imagen3.jpg);">
+                                </div>
+                                <img src=media//Danobat/Imagen3.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href=https://imartinezl.github.io/dist/index.html>
+                <img src=media/Menu.png style=width:35px;height:35px; name=Menu class=left>
+            </a>
+        </footer>
+        <section id="Gripper Tool Design" class="project tall">
+            <div class=info>
+                <h2>Gripper Tool Design</h2>
+                <p class=date>/ MECHANICAL DESIGN / KINEMATICS / 3D PRINTING</p>
+                <p>
+                    Design of a gripper tool for an industrial robot for <strong>picking and placing cylindrical
+                        parts</strong>
+                    of 50 to 80 mm, 150 mm long and 1 kg of weight.
+                </p>
+                <p>
+                    The final design of the gripper tool was used in a robot cell-simulation program and was
+                    <strong>assembled on an industrial robot</strong>
+                    from Fanuc, Fanuc LR Mate 200iB.
+                </p>
+                <ul>
+                    <li>Kinematic Analysis</li>
+                    <li>Dynamic Analysis</li>
+                    <li>Motor Selection</li>
+                </ul>
+                <p>After all the studies, the gripper was adapted to be fabricated in a 3D rapid prototyping printer.
+                </p>
+                <p>Good results obtained, the mechanism worked perfectly and the geometry was appropiate for the
+                    targets.</p>
+            </div>
+            <div class=pages>
+                <div class=page-scroll>
+                    <div class="page tall image" style="background-color: #247291">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Gripper/Imagen13.png);">
+                                </div>
+                                <img src=media//Gripper/Imagen13.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page video" style="background-color: #4C5F6B">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <video muted=true preload=none width=1530vmin;>
+                                    <source src=media//Gripper/Recording.mp4 type=video/mp4>
+                                </video>
+                                <img class=thumb src=media//Gripper/Recording-thumb.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #247291">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Gripper/Imagen12.png);">
+                                </div>
+                                <img src=media//Gripper/Imagen12.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #247291">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Gripper/Imagen11.jpg);">
+                                </div>
+                                <img src=media//Gripper/Imagen11.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #247291">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Gripper/Imagen16.png);">
+                                </div>
+                                <img src=media//Gripper/Imagen16.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #247291">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Gripper/Imagen14.png);">
+                                </div>
+                                <img src=media//Gripper/Imagen14.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href=https://imartinezl.github.io/dist/index.html>
+                <img src=media/Menu.png style=width:35px;height:35px; name=Menu class=left>
+            </a>
+        </footer>
+        <section id="Wind Turbine Failure Prediction" class="project taller">
+            <div class=info>
+                <h2>Wind Turbine Failure Prediction</h2>
+                <p class=date>/ WIND ENERGY / DATA-MINING / MACHINE LEARNING /</p>
+                <p>
+                    This project was developed in the company <a href="http://www.nemsolutions.com/">NEM Solutions</a>
+                    during the summer of 2016. The main objective was to research and define failure indicators by means
+                    of statistical analysis and similar behavior of the different wind turbines in a wind farm.
+                </p>
+                <p>
+                    I explored the <strong>failure prediction quality</strong>
+                    of techniques based on the operation of the wind farm as an entity, comparing one variable for the
+                    different machines in a wind farm, and indicating as anomalous the wind turbines that <strong>divert
+                        from the normal behavior</strong>
+                    of the wind farm.
+                </p>
+                <p>If a wind turbine does have a failure of some kind, the normal behavior of the rest of its neighbors
+                    will tell that it is actually failing.</p>
+                <p>
+                    First, we used <strong>multiple linear regression</strong>
+                    , using all the wind turbines to predict one of them. Good results, but does not deal with missing
+                    data, which is a common symptom in the data.
+                </p>
+                <p>
+                    In order to avoid that, an alternative is to use <strong>simple linear regression</strong>
+                    . Each asset of the wind farm contributes to the response. The contribution is weighted with its
+                    Pearson Correlation Coefficient to the predicted asset.
+                </p>
+                <div class=actions>
+                    <a href="http://www.nemsolutions.com/">NEM Solutions</a>
+                </div>
+            </div>
+            <div class=pages>
+                <div class=page-scroll>
+                    <div class="page tall image" style="background-color: #49ACB7">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//NEM/Imagen18.jpg);"></div>
+                                <img src=media//NEM/Imagen18.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #49ACB7">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//NEM/Imagen20.jpg);"></div>
+                                <img src=media//NEM/Imagen20.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #49ACB7">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//NEM/Imagen19.jpg);"></div>
+                                <img src=media//NEM/Imagen19.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #49ACB7">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//NEM/Imagen21.jpg);"></div>
+                                <img src=media//NEM/Imagen21.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #49ACB7">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//NEM/Imagen23.jpg);"></div>
+                                <img src=media//NEM/Imagen23.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #49ACB7">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//NEM/Imagen26.png);"></div>
+                                <img src=media//NEM/Imagen26.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href=https://imartinezl.github.io/dist/index.html>
+                <img src=media/Menu.png style=width:35px;height:35px; name=Menu class=left>
+            </a>
+        </footer>
+        <section id="New York Subway Challenge" class="project tall">
+            <div class=info>
+                <h2>New York Subway Challenge</h2>
+                <p class=date>/ OPERATIONS RESEARCH / MATHEMATICAL MODELLING /</p>
+                <p>
+                    The New York Subway Challenge is a competition where participants <strong>must pass through all the
+                        New York Subway stations</strong>
+                    in the shortest time possible.
+                </p>
+                <p>In order to find the optimal path for the New York Subway Challenge, a linear optimization method has
+                    been developed. Each station has been considered as a node of a graph, and the time needed to travel
+                    between stations as the arc weights.</p>
+                <p>
+                    This solution relies on the transformation of the original graph into its <strong>directed line
+                        graph</strong>
+                    . Working with the directed line graph allows the use of an easy <strong>integer linear
+                        programming</strong>
+                    formulation to solve the Subway Challenge.
+                </p>
+                <div class=actions>
+                    <a href=https://vimeo.com/158017543>Challenge Video</a>
+                    <a href=https://vimeo.com/158017546>User Case Video</a>
+                    <a
+                        href="http://www.nytimes.com/video/nyregion/newyorktoday/100000004584338/a-record-ride-on-new-yorks-subway.html?action=click&amp;gtype=vhs&amp;version=vhs-heading&amp;module=vhs&amp;region=title-area">Challenge
+                        Record</a>
+                    <a href="https://www.dropbox.com/s/5kuq67tp9oc3qqq/160711-Martinez-v1.pdf?dl=0">Paper</a>
+                </div>
+            </div>
+            <div class=pages>
+                <div class=page-scroll>
+                    <div class="page video" style="background-color: #7DA0A5">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <video muted=true preload=none width=1600vmin;>
+                                    <source src="media//NY/New York Subway Challenge - Complete-HD.mp4" type=video/mp4>
+                                </video>
+                                <img class=thumb src="media//NY/New York Subway Challenge - Complete-HD-thumb.png">
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page video" style="background-color: #7DA0A5">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <video muted=true preload=none width=1600vmin;>
+                                    <source src="media//NY/New York Subway Challenge - User Mode-HD.mp4" type=video/mp4>
+                                </video>
+                                <img class=thumb src="media//NY/New York Subway Challenge - User Mode-HD-thumb.png">
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #7DA0A5">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//NY/Imagen1.jpg);"></div>
+                                <img src=media//NY/Imagen1.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #7DA0A5">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//NY/Imagen33.jpg);"></div>
+                                <img src=media//NY/Imagen33.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #7DA0A5">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//NY/Imagen35.jpg);"></div>
+                                <img src=media//NY/Imagen35.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href=https://imartinezl.github.io/dist/index.html>
+                <img src=media/Menu.png style=width:35px;height:35px; name=Menu class=left>
+            </a>
+        </footer>
+        <section id="Strain Engineering of Magneto_optics" class="project tall">
+            <div class=info>
+                <h2>Strain Engineering of Magneto_optics</h2>
+                <p class=date>/ FUNDAMENTAL PHYSICS / RESEARCH / MAGNETISM /</p>
+                <p>
+                    During the summer of 2014, I developed a fundamental physics research at <a
+                        href="http://www.nanogune.eu/">nanoGUNE</a>
+                    , with the goal of fabricating thin Co films with varying interatomic distances. We used pure Cr as
+                    an underlayer, varying its thickness, so that the lattice spacing of the Cr atoms can be varied at
+                    the interface to the subsequently grown Co-film.
+                </p>
+                <p>
+                    After fabrication of the novel materials with varying atomic lattice, we studied their optical and
+                    magneto-optical properties, by means of a unique <a
+                        href=http://www.nanogune.eu/equipment/magneto-optical-kerr-effect-moke-set>magneto-optical Kerr
+                        effect (MOKE)</a>
+                    set-up tool at nanoGUNE, using the technique of <a
+                        href=http://www.nanogune.eu/techniques/generalized-magneto-optical-ellipsometry-gme>Generalized
+                        Magneto-optical Ellipsometry (GME)</a>
+                    .
+                </p>
+                <p>
+                    By means of modern fabrication techniques and tools, such as nanoGUNE &#39;s <a
+                        href=http://www.nanogune.eu/equipment/atc-series-aja-sputtering-system>Ultra High Vacuum Sputter
+                        deposition</a>
+                    system, one can produce such novel materials in a well-controlled manner. In addition,
+                    post-deposition characterization techniques, especially <a
+                        href=http://www.nanogune.eu/equipment/x-ray-reflectivitydiffractometry-xpert-pro-panalytical>X-ray
+                        diffraction</a>
+                    , enable the control and characterization of these new materials by measuring their interatomic
+                    distances.
+                </p>
+                <div class=actions>
+                    <a href="http://www.nanogune.eu/">nanoGUNE</a>
+                    <a href=http://www.nanogune.eu/nanomagnetism>nanoMagnetism Group</a>
+                </div>
+            </div>
+            <div class=pages>
+                <div class=page-scroll>
+                    <div class="page tall image" style="background-color: #80B9D2">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//nanoGUNE/Imagen1.jpg);">
+                                </div>
+                                <img src=media//nanoGUNE/Imagen1.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class=caption>
+                            <p>Strain relaxation when increasing the Co layer</p>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #80B9D2">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//nanoGUNE/Imagen8.jpg);">
+                                </div>
+                                <img src=media//nanoGUNE/Imagen8.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class=caption>
+                            <p>Atomic structure rearranges with thicker layers of Cobalt.</p>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #80B9D2">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//nanoGUNE/Imagen12.jpg);">
+                                </div>
+                                <img src=media//nanoGUNE/Imagen12.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class=caption>
+                            <p>What if the underlayer of Cr changes its thickness? Will the Co be affected by it?</p>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #80B9D2">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//nanoGUNE/Imagen2.jpg);">
+                                </div>
+                                <img src=media//nanoGUNE/Imagen2.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class=caption>
+                            <p>X-Ray spectroscopy with different Cr thicknesses</p>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #80B9D2">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//nanoGUNE/Imagen3.jpg);">
+                                </div>
+                                <img src=media//nanoGUNE/Imagen3.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class=caption>
+                            <p>GME measurement. Hysteresis loop with variable magnetic field. Intensity of magnetization
+                                depends on input &amp;output polarization angles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href=https://imartinezl.github.io/dist/index.html>
+                <img src=media/Menu.png style=width:35px;height:35px; name=Menu class=left>
+            </a>
+        </footer>
+        <section id="Breast Cancer EFM Classification" class="project tall">
+            <div class=info>
+                <h2>Breast Cancer EFM Classification</h2>
+                <p class=date>/ BIOINFORMATICS / DATA ANALYTICS / MACHINE LEARNING /</p>
+                <p>Breast cancer patients can have markedly different treatment responses and overall outcome. Despite a
+                    significant improvement in cancer survival in the last 20 years, to anticipate the outcome of the
+                    treatment still constitutes an open question.</p>
+                <p>
+                    In this way, <a href=http://www.nature.com/nature/journal/v415/n6871/full/415530a.html>van’t Veer et
+                        al. (2002)</a>
+                    , used DNA microarray analysis on primary breast tumours, and applied supervised classification to
+                    identify a gene expression strongly predictive of metastases.
+                </p>
+                <p>
+                    In this project at <strong>Bioinformatics group of CEIT</strong>
+                    , gene expression data was summarized by using a set of elementary flux modes (EFMs). Identify
+                    <strong>differentially expressed metabolites between patients</strong>
+                    with good and bad prognosis
+                </p>
+                <ul>
+                    <li>Best logistic regression model to classify prognosis</li>
+                    <li>Use Support Vector Machines with a Gaussian Kernel to classify patients based on prognosis.</li>
+                    <li>PCA to reduce the number of metabolites. Evaluate whether mean p-values of metabolites can
+                        separate patients using the first two principal components</li>
+                </ul>
+                <div class=actions>
+                    <a href="http://ceit.es/es/">CEIT</a>
+                    <a href=http://ceit.es/en/industrial-sectors/health-a-food/bioinformatics>Bioinformatics Group</a>
+                </div>
+            </div>
+            <div class=pages>
+                <div class=page-scroll>
+                    <div class="page tall image" style="background-color: #2E9797">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image"
+                                    style="background-image: url(media//Bioinformatics/Rplot0.png);"></div>
+                                <img src=media//Bioinformatics/Rplot0.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #2E9797">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image"
+                                    style="background-image: url(media//Bioinformatics/Rplot2.png);"></div>
+                                <img src=media//Bioinformatics/Rplot2.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href=https://imartinezl.github.io/dist/index.html>
+                <img src=media/Menu.png style=width:35px;height:35px; name=Menu class=left>
+            </a>
+        </footer>
+        <section id="Clarinet Vibrations Analysis" class="project tall">
+            <div class=info>
+                <h2>Clarinet Vibrations Analysis</h2>
+                <p class=date>/ ACOUSTICS / VIBRATIONS / MUSIC</p>
+                <p>The reed is one of the most important elements that form a clarinet, and its geometry is the key to
+                    the correct production of the sound.</p>
+                <p>
+                    First a theoretical model (Four-Pole Method) was used to study the <strong>acoustic
+                        performance</strong>
+                    of the clarinet. Then, an acoustic model was created and a <strong>parametric modal
+                        analysis</strong>
+                    of the reed was carried out.
+                </p>
+                <p>
+                    Moreover, an <strong>harmonicity study</strong>
+                    was performed out the experimental data. The obtained simulations have been validated by means of
+                    <strong>experimental data</strong>
+                    from a real Bb clarinet.
+                </p>
+                <div class=actions>
+                    <a
+                        href="https://www.dropbox.com/s/7icmvkmtlf0yleo/Acoustic%20Influence%20of%20the%20Geometry%20of%20a%20Clarinet%20Reed.pdf?dl=0">Paper</a>
+                </div>
+            </div>
+            <div class=pages>
+                <div class=page-scroll>
+                    <div class="page tall image" style="background-color: #247291">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Clarinet/Imagen25.png);">
+                                </div>
+                                <img src=media//Clarinet/Imagen25.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #247291">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Clarinet/Imagen28.jpg);">
+                                </div>
+                                <img src=media//Clarinet/Imagen28.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #247291">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Clarinet/Imagen23.png);">
+                                </div>
+                                <img src=media//Clarinet/Imagen23.png>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #247291">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image" style="background-image: url(media//Clarinet/Imagen22.jpg);">
+                                </div>
+                                <img src=media//Clarinet/Imagen22.jpg>
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href=https://imartinezl.github.io/dist/index.html>
+                <img src=media/Menu.png style=width:35px;height:35px; name=Menu class=left>
+            </a>
+        </footer>
+        <section id="Intelligent Traffic Light Flow Control" class="project tall">
+            <div class=info>
+                <h2>Intelligent Traffic Light Flow Control</h2>
+                <p class=date>/ CITY PLANNING / WIRELESS / CONTROL ALGORITHMS</p>
+                <p>
+                    Design of an intelligent traffic light control system based on <strong>Wireless Sensor
+                        Network</strong>
+                    (WSN). The project was carried out by 4 members, under the name of <strong>SmartCityTransport
+                        (STC)</strong>
+                    .
+                </p>
+                <p>The WSN, which consists of a group of traffic sensor nodes (TSN), was designed to provide the traffic
+                    communication infrastructure and to facilitate easy and large deployment of traffic systems.</p>
+                <p>In the proposed scheme, each TSN mainly collects the traffic data, vehicle speed, and length of the
+                    vehicles, based on processing of the sensor data. Then the collected data is sent in real time.</p>
+                <p>These nodes are installed in the roadbed in a safe manner for detecting and communicating traffic
+                    information for decision making.</p>
+                <div class=actions>
+                    <a href="https://smartcitytransport.wordpress.com/">Project Blog</a>
+                    <a href=https://twitter.com/tecnunstc>Project Twitter</a>
+                </div>
+            </div>
+            <div class=pages>
+                <div class=page-scroll> -->
+                    <!-- <div class="page tall image" style="background-color: #247291">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image"
+                                    style="background-image: url(media//Traffic Light/Imagen30.png);"></div>
+                                <img src="media//Traffic Light/Imagen30.png">
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #247291">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image"
+                                    style="background-image: url(media//Traffic Light/Imagen3.png);"></div>
+                                <img src="media//Traffic Light/Imagen3.png">
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="page tall image" style="background-color: #247291">
+                        <div class="media loader-parent" style=color:#3c6caf>
+                            <div>
+                                <div class="media image"
+                                    style="background-image: url(media//Traffic Light/Imagen31.png);"></div>
+                                <img src="media//Traffic Light/Imagen31.png">
+                            </div>
+                            <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+                                <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <!-- <footer>
+            <a href=https://imartinezl.github.io/dist/index.html>
+                <img src=media/Menu.png style=width:35px;height:35px; name=Menu class=left>
+            </a>
+        </footer> -->
+    </main>
+</body>
+
+</html>
