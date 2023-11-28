@@ -1,0 +1,34 @@
+.nav-link {
+    font-size: 18px;
+        /* Adjust the font size as needed */
+    margin-right: 20px;
+    /* This adds space to the right of each link */
+}
+
+nav {
+    text-align: center;
+    /* This centers your navigation links */
+}
+
+header {
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* This centers the header content */
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-top: 25px;
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
