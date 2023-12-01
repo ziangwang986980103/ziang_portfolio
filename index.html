@@ -1,77 +1,116 @@
+<!DOCTYPE html>
 <html>
+<!-- <link rel="shortcut icon" href=images/favicon.png> -->
 
 <head>
-    <script src="https://cdn.tailwindcss.com">
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- <link rel=stylesheet href="./fonts/css?family=Roboto:300,400,400italic,500,500italic,700,900|Roboto+Mono:400,700"> -->
+    <!-- <link rel=stylesheet href="./fonts/icon?family=Material+Icons"> -->
+    <link rel=stylesheet href=https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue_grey-deep_orange.min.css>
+    <link rel=stylesheet href=random.css>
+    <script src=https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js></script>
+    <script src=lib/jquery/dist/jquery.min.js></script>
+    <script src=lib/hammerjs/hammer.min.js></script>
+    <script src=lib/fastclick/lib/fastclick.js></script>
+    <script src=scripts/index.js></script>
     <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
+        .container {
+            display: flex; /* Use flexbox layout */
+            align-items: flex-start; /* Align items to the start of the container */
+            justify-content: center; /* Center items horizontally */
+            flex-wrap: wrap; /* Allow items to wrap to the next line if not enough space */
         }
+        .text {
+            flex: 1; /* Allows text container to grow and shrink as needed */
+            min-width: 300px; /* Minimum width before wrapping */
+            margin: 40px;
+            max-width: 50%; /* Maximum width of the text container */
+        }
+        .image {
+            flex: 1; /* Allows image container to grow and shrink as needed */
+            margin: 10px;
+            max-width: 50%; /* Maximum width of the image container */
+        }
+        img {
+            max-width: 100%; /* Make image responsive to the container size */
+            height: auto; /* Keep the aspect ratio of the image */
+        }
+        .image-carousel {
+            position: relative;
+            max-width: 550px; /* same as your image width */
+        }
+
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 100;
+        }
+
+        .carousel-control.left {
+            left: 0;
+        }
+
+        .carousel-control.right {
+            right: 0;
+        }
+        .image-carousel img {
+            width: 550px; /* Set a fixed width */
+            height: 450px; /* Set a fixed height */
+            object-fit: cover; /* This will cover the area without stretching the image */
+        }
+
     </style>
 </head>
 
-<body class="bg-gray-100">
-    <div class="container mx-auto px-4">
-        <header class="border-b border-gray-300 py-4">
-            <h1 class="text-4xl font-bold text-center">
-                Ziang Wang
-            </h1>
-            <nav class="flex justify-center space-x-4 mt-2">
-                <a class="text-gray-600 hover:text-gray-900" href="#">
-                    Bio
-                </a>
-                <a class="text-gray-600 hover:text-gray-900" href="./portfolio.html">
-                    Portfolio
-                </a>
-                <a class="text-gray-600 hover:text-gray-900" href="#">
-                    Experience
-                </a>
-                <a class="text-gray-600 hover:text-gray-900" href="#">
-                    Education
-                </a>
-                <a class="text-gray-600 hover:text-gray-900" href="#">
-                    Awards
-                </a>
-                <a class="text-gray-600 hover:text-gray-900" href="#">
-                    Interests and Activities
-                </a>
-            </nav>
-        </header>
-        <img>
-        <p class="mt-4 text-gray-700">
-            'Singapore' (featuring the music of Tom Waits) is an animated music video created solely using
-            generative machine learning methodologies.
-            <br />
-            This technology demo is presented for research and educational purposes only and, as such, should be
-            considered fair use.
-        </p>
-        <!-- <main class="py-8">
-            <h2 class="text-3xl font-bold">
-                SINGAPORE - IMAGE TO VIDEO TECH DEMO
-            </h2>
-            <p class="mt-4 text-gray-700">
-                'Singapore' (featuring the music of Tom Waits) is an animated music video created solely using
-                generative machine learning methodologies.
-                <br />
-                This technology demo is presented for research and educational purposes only and, as such, should be
-                considered fair use.
-            </p>
-            <div class="mt-6">
-                <img alt="Placeholder image representing an animated music video with a vintage ship, large moon, and dark silhouettes of land in the background"
-                    class="w-full h-auto" height="450"
-                    src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RiQ3WUTKCUPbZYiGSwMCuzVT/user-cqBlTE5Q309ZI6Mt8oOzrSTv/img-YQqJe4EaXb2kAV20hzDMdTE9.png?st=2023-11-23T00%3A45%3A45Z&amp;se=2023-11-23T02%3A45%3A45Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2023-11-23T01%3A12%3A59Z&amp;ske=2023-11-24T01%3A12%3A59Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=hF2u4r3pAvUMpve746TO4T/ndH1T5zWiKP43VMiO8io%3D"
-                    width="800" />
-                <div class="flex justify-center mt-4">
-                    <button class="text-gray-700 hover:text-gray-900">
-                        <i class="fas fa-play fa-2x">
-                        </i>
-                    </button>
-                </div>
-            </div>
-        </main> -->
+<body>
+    <header>
+        <h1>Ziang Wang</h1>
+        <a class="nav-link text-gray-600 hover:text-gray-900" href="./index.html">About</a>
+        <a class="nav-link text-gray-600 hover:text-gray-900" href="./random.html">Portfolio</a>
+        <a class="nav-link" href="./music.html">Music</a>
+    </header>
+    <div class="container">
+        <div class="text">
+            <h5>Hi! I am Ziang!</h5>
+            <h6>I am a senior student at the University of Michigan, majoring in Computer Science and Cognitive Science. My academic
+                journey has been driven by a fascination with the intersection of Human-Computer Interaction, Mixed Reality, and AI for
+                Education. I'm particularly passionate about how technology can enhance learning experiences and am involved in several
+                research projects in this area. To learn more about my work, please visit my Portfolio page.
+            </h6>
+            <h6>Outside the lab and classroom, I'm an avid traveler and nature enthusiast. Some of my most memorable adventures include
+                hiking in Yosemite and Bryce Canyon National Parks. I also find great joy in playing film scores on the piano. To hear some of my favorite pieces, feel free to visit my Music page.
+            </h6>
+        </div>
+        <!-- <div class="image">
+            <img src="images/IMG_0668.JPG" width="550" height="450">
+        </div> -->
+        <div class="image-carousel">
+            <img id="carousel-image" src="images/IMG_0668.JPG" width="550" height="450">
+            <button class="carousel-control left" onclick="changeImage(-1)">&#10094;</button>
+            <button class="carousel-control right" onclick="changeImage(1)">&#10095;</button>
+        </div>
     </div>
-</body>
+    <script>
+        var images = ["images/IMG_0668.JPG", "images/WechatIMG12.JPG"]; // Add paths to your images
+        var currentIndex = 0;
 
+        function changeImage(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1;
+            } else if (currentIndex > images.length - 1) {
+                currentIndex = 0;
+            }
+            document.getElementById('carousel-image').src = images[currentIndex];
+        }
+    </script>
+</body>
 </html>
