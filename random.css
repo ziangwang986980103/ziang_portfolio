@@ -813,7 +813,7 @@ body.has-fullscreen .fullscreen-overlay {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    content: 'close';
+    /* content: 'close'; */
     color: rgba(0, 0, 0, .54);
     pointer-events: none;
     position: absolute;
